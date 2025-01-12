@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Navbar() {
-  const [activePage, setActivePage] = useState("ABOUT ME");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: "PROJECTS", href: "/projects" },
     { name: "CONTACT", href: "/contact" },
   ];
+  const pathname = usePathname();
 
   return (
     <nav className="sticky top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 px-6 py-4 h-[10vh]">
@@ -37,11 +38,10 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className={`text-sm transition-colors ${
-                activePage === item.name
+                pathname === item.href
                   ? "text-[#0045FF]"
                   : "text-gray-900 hover:text-[#0045FF]"
               }`}
-              onClick={() => setActivePage(item.name)}
             >
               {item.name}
             </Link>
@@ -86,12 +86,11 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  activePage === item.name
+                  pathname === item.href
                     ? "text-[#0045FF] bg-blue-50"
                     : "text-gray-900 hover:text-[#0045FF] hover:bg-blue-50"
                 }`}
                 onClick={() => {
-                  setActivePage(item.name);
                   setIsMenuOpen(false);
                 }}
               >
