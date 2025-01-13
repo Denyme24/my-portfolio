@@ -16,7 +16,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 px-6 py-4 h-[10vh]">
+    <nav className="sticky top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 px-6 py-6 h-[10vh] items-center">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-4 h-4 bg-[#0045FF]" />
