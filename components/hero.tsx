@@ -1,27 +1,29 @@
-import { Button } from "@/components/ui/button";
-import ProfileCard from "./card";
-import Link from "next/link";
+import { Button } from '@/components/ui/button';
+import ProfileCard from './card';
+import Link from 'next/link';
+
 export default function Hero() {
   return (
-    <div className="min-h-[calc(100vh-70px)] bg-[#F5F0EC] flex items-center justify-center">
-      <div className="container mx-auto px-10 grid  md:grid-cols-2 gap-12 items-center">
+    <div className="flex min-h-[calc(100vh-70px)] items-center justify-center bg-[#F5F0EC]">
+      <div className="container mx-auto grid items-center gap-12 px-10 md:grid-cols-2">
         <ProfileCard />
         <div className="space-y-6">
           <h1 className="text-7xl font-bold">Hello:) </h1>
           <h2 className="text-3xl">Here's who I am & what I do</h2>
           <div className="flex gap-4">
-            <Link href={"/resume"}>
-              <Button className="bg-[#0045FF] hover:bg-[#0045FF]/90 text-white px-8">
+            <Link href={'/resume'}>
+              <Button className="bg-[#0045FF] px-8 text-white hover:bg-[#0045FF]/90">
                 RESUME
               </Button>
             </Link>
-            <Link href={"/projects"}>
+            <Link href={'/projects'}>
               <Button variant="outline" className="px-8 text-white">
                 PROJECTS
               </Button>
             </Link>
           </div>
-          <p className="text-gray-600 max-w-lg">
+
+          <p className="max-w-lg text-gray-600">
             I’m a dedicated developer with a knack for crafting intuitive,
             scalable, and visually appealing web solutions. Full-stack
             development is my playground, where I merge technical precision with
