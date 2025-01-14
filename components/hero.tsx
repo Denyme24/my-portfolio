@@ -11,7 +11,7 @@ export default function Hero() {
           <h1 className="text-7xl font-bold">Hello:) </h1>
           <h2 className="text-3xl">Here's who I am & what I do</h2>
           <div className="flex gap-4">
-            <Link href={'/resume'}>
+            <Link href={'/resume.pdf'}>
               <Button className="bg-[#0045FF] px-8 text-white hover:bg-[#0045FF]/90">
                 RESUME
               </Button>
