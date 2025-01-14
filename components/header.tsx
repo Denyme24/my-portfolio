@@ -80,7 +80,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="sm:hidden">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="space-y-1 bg-white px-2 pb-3 pt-2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
