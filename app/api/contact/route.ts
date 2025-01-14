@@ -63,9 +63,19 @@ export async function POST(req: NextRequest) {
     );
   } catch (error) {
     console.error('Error occurred:', error);
-    return NextResponse.json(
-      { message: 'Something went wrong. Please try again.' },
-      { status: 500 },
-    );
+
+    if (error instanceof Error) {
+      console.error('Error message:', error.message);
+      console.error('Error stack:', error.stack);
+      return NextResponse.json(
+        { message: 'Something went wrong. Please try again.', error: error.message },
+        { status: 500 },
+      );
+    } else {
+      return NextResponse.json(
+        { message: 'An unknown error occurred.' },
+        { status: 500 },
+      );
+    }
   }
 }
