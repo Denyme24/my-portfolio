@@ -29,7 +29,7 @@ export default function ProfileCard() {
 
         {/* Title */}
         <p className="text-sm tracking-[0.2em] text-gray-600">
-          MERN Stack Developer
+          Full Stack Developer
         </p>
       </div>
     </div>

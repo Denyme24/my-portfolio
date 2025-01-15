@@ -26,7 +26,7 @@ export default function Navbar() {
           >
             <span className="whitespace-nowrap font-medium">Naman Raj</span>
             <span className="hidden font-light text-gray-600 sm:inline">
-              / MERN Stack
+              / Full Stack
             </span>
           </Link>
         </div>
