@@ -1,6 +1,6 @@
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
-import { Button } from "./ui/button";
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+import { Button } from './ui/button';
 
 interface ProjectCardProps {
   title: string;
@@ -22,23 +22,23 @@ export default function ProjectCard({
   demo,
 }: ProjectCardProps) {
   return (
-    <Link href={href} className="block group">
-      <div className="grid md:grid-cols-2 bg-white shadow-lg hover:shadow-xl transition-shadow">
+    <Link href={href} className="group block">
+      <div className="grid bg-white shadow-lg transition-shadow hover:shadow-xl md:grid-cols-2">
         {/* Content */}
         <div className="p-8 md:p-12">
-          <div className="border-l-4 border-[#0045FF] pl-4 mb-6">
-            <h3 className="text-2xl font-bold mb-2">{title}</h3>
+          <div className="mb-6 border-l-4 border-[#0045FF] pl-4">
+            <h3 className="mb-2 text-2xl font-bold">{title}</h3>
             <p className="text-gray-600">{role}</p>
           </div>
-          <p className="text-gray-600 leading-relaxed">{description}</p>
-          <div className="buttons flex  items-center gap-6 mt-6">
+          <p className="leading-relaxed text-gray-600">{description}</p>
+          <div className="buttons mt-6 flex items-center gap-6">
             <Link href={code}>
-              <Button className="bg-[#0045FF] hover:bg-[#0045FF]/90 text-white px-8">
+              <Button className="bg-[#0045FF] px-8 text-white hover:bg-[#0045FF]/90">
                 CODE
               </Button>
             </Link>
             <Link href={demo}>
-              <Button variant="outline" className="px-8 text-white">
+              <Button variant="outline" className="bg-black px-8 text-white">
                 DEMO
               </Button>
             </Link>
@@ -46,7 +46,7 @@ export default function ProjectCard({
         </div>
 
         {/* Image */}
-        <div className="relative h-64 md:h-full bg-gray-100">
+        <div className="relative h-64 bg-gray-100 md:h-full">
           <Image src={image} alt={title} fill className="object-cover" />
         </div>
       </div>
