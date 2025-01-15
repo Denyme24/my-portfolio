@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <div className="flex min-h-[calc(100vh-70px)] items-center justify-center bg-[#F5F0EC]">
-      <div className="container mx-auto grid items-center gap-12 px-10 md:grid-cols-2">
+      <div className="lg:px container mx-auto grid items-center gap-12 px-10 pb-4 md:grid-cols-2 md:px-28 md:pb-0">
         <ProfileCard />
         <div className="space-y-6">
           <h1 className="text-7xl font-bold">Hello:) </h1>
@@ -17,7 +17,7 @@ export default function Hero() {
               </Button>
             </Link>
             <Link href={'/projects'}>
-              <Button variant="outline" className="px-8 text-white">
+              <Button variant="outline" className="bg-black px-8 text-white">
                 PROJECTS
               </Button>
             </Link>

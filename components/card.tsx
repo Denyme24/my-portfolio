@@ -1,10 +1,10 @@
-import Image from "next/image";
-import NamanImg from "@/public/portfolio_img.jpg";
+import Image from 'next/image';
+import NamanImg from '@/public/portfolio_img.jpg';
 export default function ProfileCard() {
   return (
-    <div className="bg-[#F7F3F0] p-8 rounded-lg shadow-lg max-w-md w-full">
+    <div className="w-full max-w-md rounded-lg bg-[#F7F3F0] p-8 shadow-lg">
       {/* Profile Image */}
-      <div className="relative w-52 h-52 mx-auto mb-6">
+      <div className="relative mx-auto mb-6 h-52 w-52">
         <div className="absolute inset-0 rounded-full bg-gray-200">
           <Image
             src={NamanImg}
@@ -18,17 +18,17 @@ export default function ProfileCard() {
 
       {/* Name */}
       <div className="text-center">
-        <h2 className="text-[2rem] font-bold mb-2 leading-tight">
+        <h2 className="mb-2 text-[2rem] font-bold leading-tight">
           Naman
           <br />
           Raj
         </h2>
 
         {/* Divider Line */}
-        <div className="w-12 h-0.5 bg-[#0045FF] mx-auto mb-4"></div>
+        <div className="mx-auto mb-4 h-0.5 w-12 bg-[#0045FF]"></div>
 
         {/* Title */}
-        <p className="text-gray-600 tracking-[0.2em] text-sm">
+        <p className="text-sm tracking-[0.2em] text-gray-600">
           MERN Stack Developer
         </p>
       </div>
