@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 md:flex-row md:items-center">
         {/* Copyright Section */}
         <div className="text-sm text-gray-600">
-          <p>© 2024 by Naman Raj.</p>
+          <p>© 2025 by Naman Raj.</p>
         </div>
 
         {/* Contact Section */}
