@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import {Github , Linkedin} from "lucide-react"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ export default function Navbar() {
     { name: 'RESUME', href: '/resume.pdf' },
     { name: 'PROJECTS', href: '/projects' },
     { name: 'CONTACT', href: '/contact' },
+
   ];
   const pathname = usePathname();
 
@@ -30,9 +32,18 @@ export default function Navbar() {
             </span>
           </Link>
         </div>
+        <div className={"flex gap-6 justify-center items-center"}>
+          <Link href="https://github.com/Denyme24" className="text-gray-900 hover:text-[#0045FF]">
+            <Github className="h-6 w-6" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/namanraj24/" className="text-gray-900 hover:text-[#0045FF]">
+            <Linkedin className="h-6 w-6" />
+          </Link>
+
+        </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-8 sm:flex">
+        <div className="hidden items-center gap-6 sm:flex">
           {navigation.map((item) => (
             <Link
               key={item.name}
