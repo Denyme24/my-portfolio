@@ -4,6 +4,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import {Github , Linkedin} from "lucide-react"
+import Image from 'next/image';
+import Dev from '../public/dev.png';
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +21,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky left-0 right-0 top-0 z-50 h-[10vh] items-center bg-white/80 px-6 py-6 backdrop-blur-md">
+    <nav className="sticky left-0 right-0 top-0 z-50 h-[8vh] items-center bg-white/80 px-6 py-4 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="h-4 w-4 bg-[#0045FF]" />
@@ -32,18 +35,21 @@ export default function Navbar() {
             </span>
           </Link>
         </div>
-        <div className={"flex gap-6 justify-center items-center"}>
+        <div className={"flex gap-8 justify-center items-center"}>
           <Link href="https://github.com/Denyme24" className="text-gray-900 hover:text-[#0045FF]">
             <Github className="h-6 w-6" />
           </Link>
           <Link href="https://www.linkedin.com/in/namanraj24/" className="text-gray-900 hover:text-[#0045FF]">
             <Linkedin className="h-6 w-6" />
           </Link>
+          <Link href="https://dev.to/denyme24" className="text-gray-900 hover:text-[#0045FF]">
+            <Image src={Dev} alt="dev" width={40} height={40} className="rounded-full" />
+          </Link>
 
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden items-center gap-6 sm:flex">
+        <div className="hidden items-center gap-4 sm:flex">
           {navigation.map((item) => (
             <Link
               key={item.name}

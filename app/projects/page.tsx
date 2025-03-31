@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       role: "Networking",
       description:
           "A lightweight DNS server built with Go and Fiber for authoritative domain resolution. Handles UDP-based DNS queries with in-memory record storage and provides a REST API for dynamic record management. Features custom port support and real-time domain mapping. Wrote an in-depth blog explaining DNS fundamentals and the development journey.",
-      image: dnsServer, // Replace with your image import
+      image: dnsServer,
       href: "https://dev.to/denyme24/dns-explained-from-basics-to-building-my-own-dns-server-25o6",
       code: "https://github.com/Denyme24/my-dns-server",
       demo: "https://github.com/Denyme24/my-dns-server#readme",
