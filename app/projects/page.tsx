@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import GetMeAChai from "@/public/getmeachai.png";
 import Kisansetu from "@/public/Kisansetu.png";
 import ResumeReview from "@/public/resume_review.png";
+import dnsServer from "@/public/dnsServer.png";
 
 export default function ProjectsPage() {
   const projects = [
@@ -37,6 +38,16 @@ export default function ProjectsPage() {
       href: "/projects",
       code: "https://github.com/Denyme24/Resume-Review.git",
       demo: "/projects",
+    },
+    {
+      title: "Custom DNS Server",
+      role: "Networking",
+      description:
+          "A lightweight DNS server built with Go and Fiber for authoritative domain resolution. Handles UDP-based DNS queries with in-memory record storage and provides a REST API for dynamic record management. Features custom port support and real-time domain mapping. Wrote an in-depth blog explaining DNS fundamentals and the development journey.",
+      image: dnsServer, // Replace with your image import
+      href: "https://dev.to/denyme24/dns-explained-from-basics-to-building-my-own-dns-server-25o6",
+      code: "https://github.com/Denyme24/my-dns-server",
+      demo: "https://github.com/Denyme24/my-dns-server#readme",
     },
     // Add more projects as needed
   ];
