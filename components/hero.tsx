@@ -23,22 +23,24 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative text-7xl font-bold"
+            className="xs:text-5xl relative text-4xl font-bold sm:text-7xl"
           >
-            Namaste
-            <motion.span
-              initial={{ rotate: 0 }}
-              animate={{ rotate: [0, 20, 0, 20, 0] }}
-              transition={{
-                duration: 1.5,
-                delay: 0.5,
-                repeat: Infinity,
-                repeatDelay: 4,
-              }}
-              className="ml-2 inline-block text-[#0045FF]"
-            >
-              :)
-            </motion.span>
+            <span className="whitespace-nowrap">
+              Namaste
+              <motion.span
+                initial={{ rotate: 0 }}
+                animate={{ rotate: [0, 20, 0, 20, 0] }}
+                transition={{
+                  duration: 1.5,
+                  delay: 0.5,
+                  repeat: Infinity,
+                  repeatDelay: 4,
+                }}
+                className="ml-2 inline-block text-[#0045FF]"
+              >
+                :)
+              </motion.span>
+            </span>
           </motion.h1>
 
           <motion.h2
