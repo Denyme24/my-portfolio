@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import NamanImg from '@/public/portfolio_img.jpg';
+import NamanImg from '@/public/Naman_img.jpg';
 import { motion } from 'framer-motion';
 
 export default function ProfileCard() {
