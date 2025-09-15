@@ -58,7 +58,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.6 }}
             className="flex gap-4"
           >
-            <Link href={'/resume.pdf'}>
+            <Link href={'/naman_resume.pdf'}>
               <Button className="bg-[#0045FF] px-8 text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-[#0045FF]/90 hover:shadow-lg hover:shadow-blue-200">
                 RESUME
               </Button>
