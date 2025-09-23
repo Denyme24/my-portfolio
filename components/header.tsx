@@ -13,7 +13,7 @@ export default function Navbar() {
 
   const navigation = [
     { name: 'ABOUT ME', href: '/' },
-    { name: 'RESUME', href: '/resume.pdf' },
+    { name: 'RESUME', href: '/naman_resume.pdf' },
     { name: 'PROJECTS', href: '/projects' },
     { name: 'CONTACT', href: '/contact' },
   ];
