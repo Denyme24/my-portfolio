@@ -4,43 +4,50 @@ import ProjectCard from '@/components/project-card';
 import Navbar from '@/components/header';
 import Footer from '@/components/footer';
 import GetMeAChai from '@/public/getmeachai.png';
-import Kisansetu from '@/public/Kisansetu.png';
-import ResumeReview from '@/public/resume_review.png';
 import dnsServer from '@/public/dnsServer.png';
 import { motion } from 'framer-motion';
 
 export default function ProjectsPage() {
   const projects = [
     {
+      title: 'AI-Powered Brochure Generator',
+      role: 'AI/DevOps/Cloud-Native',
+      description:
+        'An intelligent property brochure generator using AI (OpenAI GPT) for multi-language content and professional PDFs. Built a complete DevOps pipeline with GitHub Actions CI/CD, automated Docker builds pushed to Amazon ECR, and zero-downtime deployments to Amazon EKS. Implemented comprehensive observability with Prometheus metrics collection, Grafana dashboards, and Alertmanager with Slack integration for real-time monitoring and alerting. Features containerized microservices (Go/Node.js) and automated cloud deployments.',
+      image: '/ai_powered_brochure.jpg',
+      href: 'https://drive.google.com/drive/folders/1xU1yfY0JPTt0ru6ibScIjkCbGYIMRylq',
+      code: 'https://github.com/Denyme24/AI-Powered-Brochure-Generator',
+      demo: 'https://drive.google.com/drive/folders/1xU1yfY0JPTt0ru6ibScIjkCbGYIMRylq',
+    },
+    {
+      title: 'Adaptive Threat Modeler',
+      role: 'Full Stack, Security/AI',
+      description:
+        'A context-aware, AI-powered threat modeling platform for software security. Monitors codebases continuously, builds interactive threat maps, and gives GPT-4-driven remediation suggestions. Integrates static/dynamic analysis, automated reporting, and real-time alerts. Features multi-language analysis (Go, JS/TS, Python, etc), AST-based engine, OWASP/CWE mapping, modern React 3D UI, direct GitHub/Slack integration, risk heatmaps, and MCP (LangChain/OpenAI) agent.',
+      image: '/atm.jpg',
+      href: 'https://drive.google.com/file/d/1cLziqhJMvmPL3WwkLiboErRbvH6DVblC/view',
+      code: 'https://github.com/Denyme24/Adaptive-Threat-Modeler',
+      demo: 'https://drive.google.com/file/d/1cLziqhJMvmPL3WwkLiboErRbvH6DVblC/view',
+    },
+    {
+      title: 'CaseCanopy',
+      role: 'Full Stack, Legal AI/RAG',
+      description:
+        'A comprehensive legal AI system combining Retrieval Augmented Generation for legal precedent mining with automated document generation. Find Supreme Court cases, predict outcomes, and create PIL/RTI/Complaint docs—integrated with Claude Desktop via MCP. Features RAG for precedent search, FastAPI agentic-AI, Go (Gin) backend, Next.js/React frontend, Python/Flask microservices, secure document management and outcome prediction.',
+      image: '/case_canopy.jpg',
+      href: 'https://www.youtube.com/watch?v=rX6vY_x8vrA',
+      code: 'https://github.com/Denyme24/CaseCanopy',
+      demo: 'https://www.youtube.com/watch?v=rX6vY_x8vrA',
+    },
+    {
       title: 'GetMeAChai',
       role: 'Full Stack',
       description:
-        'Get Me a Chai is a crowdfunding platform designed to help creators receive support through direct contributions from fans and followers. Inspired by “Buy Me a Coffee,” it allows users to fund creators through donations, ensuring creators can continue doing what they love with the support of their community.',
+        'Get Me a Chai is a crowdfunding platform designed to help creators receive support through direct contributions from fans and followers. Inspired by "Buy Me a Coffee," it allows users to fund creators through donations, ensuring creators can continue doing what they love with the support of their community.',
       image: GetMeAChai,
       href: 'https://get-me-a-chai-theta.vercel.app/',
       code: 'https://github.com/Denyme24/GetMeAChai.git',
       demo: 'https://get-me-a-chai-theta.vercel.app/',
-    },
-    {
-      title: 'Kisan Setu',
-      role: 'Blockchain',
-      description:
-        'A blockchain-based marketplace bridging farmers and buyers. It ensures transparent contract farming through features like real-time order updates, ZetaChain-powered cross-chain payments, and PDF contract generation.',
-      image: Kisansetu,
-
-      href: 'https://www.youtube.com/watch?v=NEWT4eQMLEE',
-      code: 'https://github.com/slashexx/kisansetu',
-      demo: 'https://www.youtube.com/watch?v=NEWT4eQMLEE',
-    },
-    {
-      title: 'Resume Review',
-      role: 'Full Stack',
-      description:
-        'This project helps you shortlist the best resumes based on the job description you provide. It checks for matching skills from the given job description and the resumes, and based on the matching skills, it assigns a similarity score that helps determine the most relevant resume among all.',
-      image: ResumeReview,
-      href: '/projects',
-      code: 'https://github.com/Denyme24/Resume-Review.git',
-      demo: '/projects',
     },
     {
       title: 'Custom DNS Server',
