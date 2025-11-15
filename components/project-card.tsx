@@ -9,7 +9,7 @@ interface ProjectCardProps {
   title: string;
   role: string;
   description: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   href: string;
   code: string;
   demo: string;
