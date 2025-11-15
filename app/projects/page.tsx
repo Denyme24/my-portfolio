@@ -33,7 +33,7 @@ export default function ProjectsPage() {
       title: 'CaseCanopy',
       role: 'Full Stack, Legal AI/RAG',
       description:
-        'A comprehensive legal AI system combining Retrieval Augmented Generation for legal precedent mining with automated document generation. Find Supreme Court cases, predict outcomes, and create PIL/RTI/Complaint docs—integrated with Claude Desktop via MCP. Features RAG for precedent search, FastAPI agentic-AI, Go (Gin) backend, Next.js/React frontend, Python/Flask microservices, secure document management and outcome prediction.',
+        'A comprehensive legal AI system combining Retrieval Augmented Generation for legal precedent mining with automated document generation. Find Supreme Court cases, predict outcomes, and create PIL/RTI/Complaint docs integrated with Claude Desktop via MCP. Features RAG for precedent search, FastAPI agentic-AI, Go (Gin) backend, Next.js/React frontend, Python/Flask microservices, secure document management and outcome prediction.',
       image: '/case_canopy.jpg',
       href: 'https://www.youtube.com/watch?v=rX6vY_x8vrA',
       code: 'https://github.com/Denyme24/CaseCanopy',
@@ -65,7 +65,7 @@ export default function ProjectsPage() {
     <>
       <Navbar />
       <div className="bg-gradient-to-b from-[#F5F0EC] to-[#EAE6E0] py-16">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-6 md:px-12 lg:px-20">
           <div className="mb-20 text-center">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
@@ -94,24 +94,26 @@ export default function ProjectsPage() {
           </div>
 
           {/* Projects Grid with staggered animation */}
-          <motion.div
-            className="space-y-12"
-            variants={{
-              hidden: { opacity: 0 },
-              show: {
-                opacity: 1,
-                transition: {
-                  staggerChildren: 0.3,
+          <div className="mx-auto max-w-5xl">
+            <motion.div
+              className="space-y-12"
+              variants={{
+                hidden: { opacity: 0 },
+                show: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.3,
+                  },
                 },
-              },
-            }}
-            initial="hidden"
-            animate="show"
-          >
-            {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
-          </motion.div>
+              }}
+              initial="hidden"
+              animate="show"
+            >
+              {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </motion.div>
+          </div>
 
           {/* Removed decorative bubble elements */}
         </div>
