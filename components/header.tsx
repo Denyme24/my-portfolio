@@ -15,6 +15,7 @@ export default function Navbar() {
     { name: 'ABOUT ME', href: '/' },
     { name: 'RESUME', href: '/naman_resume.pdf' },
     { name: 'PROJECTS', href: '/projects' },
+    { name: 'ACHIEVEMENTS', href: '/achievements' },
     { name: 'CONTACT', href: '/contact' },
   ];
 
