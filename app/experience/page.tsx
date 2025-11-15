@@ -90,11 +90,6 @@ export default function ExperiencePage() {
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
               <h1 className="text-5xl font-bold">Experience</h1>
-              <motion.div
-                className="h-4 w-4 bg-[#0045FF]"
-                animate={{ rotate: [360, 180, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
-              />
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
@@ -111,7 +106,7 @@ export default function ExperiencePage() {
           {/* Timeline Container */}
           <div className="relative mx-auto max-w-5xl">
             {/* Vertical Timeline Line */}
-            <div className="absolute left-8 top-0 hidden h-full w-0.5 bg-[#0045FF]/20 md:block md:left-1/2" />
+            <div className="absolute left-8 top-0 hidden h-full w-0.5 bg-[#0045FF]/20 md:left-1/2 md:block" />
 
             {/* Experiences */}
             <motion.div
@@ -131,7 +126,7 @@ export default function ExperiencePage() {
                     className="relative"
                   >
                     {/* Timeline Dot */}
-                    <div className="absolute left-8 top-8 z-10 hidden md:block md:left-1/2 md:-translate-x-1/2">
+                    <div className="absolute left-8 top-8 z-10 hidden md:left-1/2 md:block md:-translate-x-1/2">
                       <motion.div
                         className="h-6 w-6 rounded-full border-4 border-white bg-[#0045FF] shadow-lg"
                         whileHover={{ scale: 1.2 }}
@@ -147,7 +142,7 @@ export default function ExperiencePage() {
                       whileHover={{ y: -5 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="rounded-lg bg-white p-6 md:p-7 shadow-lg transition-all duration-300 hover:shadow-2xl">
+                      <div className="rounded-lg bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-2xl md:p-7">
                         {/* Company Header */}
                         <div className="mb-6 flex items-start justify-between">
                           <div className="flex-1">
@@ -236,4 +231,3 @@ export default function ExperiencePage() {
     </>
   );
 }
-
