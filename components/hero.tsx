@@ -84,12 +84,13 @@ export default function Hero() {
             scalable, and visually appealing web solutions. Full-stack
             development is my playground, where I merge technical precision with
             creative problem-solving. My expertise spans JavaScript, Go, and
-            Next.js, and I&apos;m committed to writing efficient, maintainable code
-            that drives results. Continuously learning and exploring, I aim to
-            stay at the forefront of innovation, building solutions that leave a
-            meaningful impact. Whether it&apos;s architecting a dynamic web app,
-            refining user experiences, or diving into the latest tech trends, I
-            thrive on turning ideas into reality with purpose and passion.
+            Next.js, and I&apos;m committed to writing efficient, maintainable
+            code that drives results. Continuously learning and exploring, I aim
+            to stay at the forefront of innovation, building solutions that
+            leave a meaningful impact. Whether it&apos;s architecting a dynamic
+            web app, refining user experiences, or diving into the latest tech
+            trends, I thrive on turning ideas into reality with purpose and
+            passion.
           </motion.p>
         </div>
       </div>
