@@ -68,7 +68,10 @@ export async function POST(req: NextRequest) {
       console.error('Error message:', error.message);
       console.error('Error stack:', error.stack);
       return NextResponse.json(
-        { message: 'Something went wrong. Please try again.', error: error.message },
+        {
+          message: 'Something went wrong. Please try again.',
+          error: error.message,
+        },
         { status: 500 },
       );
     } else {
