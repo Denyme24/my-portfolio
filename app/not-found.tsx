@@ -23,7 +23,7 @@ export default function NotFound() {
         {/* Error Message */}
         <h1 className="mb-3 text-4xl font-bold">Page Not Found</h1>
         <p className="mb-8 max-w-md text-lg text-gray-600">
-          The page you're looking for doesn't exist.
+          The page you&apos;re looking for doesn&apos;t exist.
         </p>
         <Link
           href="/"
