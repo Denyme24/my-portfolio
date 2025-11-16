@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-3xl"
           >
-            Here's who I am & what I do
+            Here&apos;s who I am & what I do
           </motion.h2>
 
           <motion.div
@@ -80,16 +80,17 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.9 }}
             className="max-w-lg text-gray-600"
           >
-            I'm a dedicated developer with a knack for crafting intuitive,
+            I&apos;m a dedicated developer with a knack for crafting intuitive,
             scalable, and visually appealing web solutions. Full-stack
             development is my playground, where I merge technical precision with
             creative problem-solving. My expertise spans JavaScript, Go, and
-            Next.js, and I'm committed to writing efficient, maintainable code
-            that drives results. Continuously learning and exploring, I aim to
-            stay at the forefront of innovation, building solutions that leave a
-            meaningful impact. Whether it's architecting a dynamic web app,
-            refining user experiences, or diving into the latest tech trends, I
-            thrive on turning ideas into reality with purpose and passion.
+            Next.js, and I&apos;m committed to writing efficient, maintainable
+            code that drives results. Continuously learning and exploring, I aim
+            to stay at the forefront of innovation, building solutions that
+            leave a meaningful impact. Whether it&apos;s architecting a dynamic
+            web app, refining user experiences, or diving into the latest tech
+            trends, I thrive on turning ideas into reality with purpose and
+            passion.
           </motion.p>
         </div>
       </div>

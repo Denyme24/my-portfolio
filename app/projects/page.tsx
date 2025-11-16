@@ -45,7 +45,7 @@ export default function ProjectsPage() {
       description:
         'Get Me a Chai is a crowdfunding platform designed to help creators receive support through direct contributions from fans and followers. Inspired by "Buy Me a Coffee," it allows users to fund creators through donations, ensuring creators can continue doing what they love with the support of their community.',
       image: GetMeAChai,
-      href: 'https://get-me-a-chai-theta.vercel.app/',
+      href: 'https://get-me-a-chai.namanraj.tech/',
       code: 'https://github.com/Denyme24/GetMeAChai.git',
       demo: 'https://get-me-a-chai-theta.vercel.app/',
     },

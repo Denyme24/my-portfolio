@@ -43,7 +43,7 @@ export default function Contact() {
       } else {
         setMessage('Something went wrong. Please try again.');
       }
-    } catch (error) {
+    } catch {
       setMessage('Something went wrong. Please try again.');
     }
 
@@ -69,7 +69,7 @@ export default function Contact() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              Let's talk
+              Let&apos;s talk
             </h1>
           </motion.div>
 
