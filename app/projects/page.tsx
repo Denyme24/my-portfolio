@@ -10,6 +10,16 @@ import { motion } from 'framer-motion';
 export default function ProjectsPage() {
   const projects = [
     {
+      title: '3RVision-Platform',
+      role: 'DevOps/Cloud-Native/Service Mesh',
+      description:
+        'A production-grade Service Mesh implementation using Istio on Kubernetes. Focuses on advanced traffic management with weighted canary deployments, header-based routing, and circuit breaking. Enforces Zero Trust security via strict mTLS and includes a full observability stack (Jaeger for tracing, Prometheus for metrics). Infrastructure provisioning is fully automated using Terraform and Kind.',
+      image: '/3rvision_platform.jpg',
+      href: 'https://dev.to/denyme24/learning-istio-the-hard-way-a-real-service-mesh-lab-with-canary-mtls-and-tracing-m82',
+      code: 'https://github.com/Denyme24/3RVision-Platform',
+      demo: 'https://dev.to/denyme24/learning-istio-the-hard-way-a-real-service-mesh-lab-with-canary-mtls-and-tracing-m82',
+    },
+    {
       title: 'AI-Powered Brochure Generator',
       role: 'AI/DevOps/Cloud-Native',
       description:
