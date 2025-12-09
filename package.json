@@ -23,7 +23,7 @@
     "nodemailer": "^7.0.11",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-element-to-jsx-string": "^15.0.0",
+    "react-element-to-jsx-string": "^17.0.1",
     "react-intersection-observer": "^10.0.0",
     "react-tsparticles": "^2.12.2",
     "tailwind-merge": "^2.6.0",
