@@ -5,13 +5,7 @@ import Footer from '@/components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import {
-  Trophy,
-  TrendingUp,
-  FileText,
-  ExternalLink,
-  Award,
-} from 'lucide-react';
+import { Trophy, TrendingUp, FileText, ExternalLink } from 'lucide-react';
 
 export default function AchievementsPage() {
   const achievements = [
@@ -244,26 +238,6 @@ export default function AchievementsPage() {
               })}
             </motion.div>
           </div>
-
-          {/* Bottom Decorative Section */}
-          <motion.div
-            className="mt-20 text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 0.8 }}
-          >
-            <div className="relative inline-block">
-              <motion.div
-                className="flex items-center gap-3 rounded-full bg-white px-8 py-4 shadow-lg"
-                whileHover={{ scale: 1.05 }}
-              >
-                <Award className="h-6 w-6 text-[#0045FF]" />
-                <span className="font-semibold text-gray-800">
-                  more achievements on the way...
-                </span>
-              </motion.div>
-            </div>
-          </motion.div>
         </div>
       </div>
       <Footer />

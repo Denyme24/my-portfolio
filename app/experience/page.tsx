@@ -3,12 +3,27 @@
 import Navbar from '@/components/header';
 import Footer from '@/components/footer';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, MapPin, Code, GitBranch } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Code } from 'lucide-react';
 
 export default function ExperiencePage() {
   const experiences = [
     {
       id: 1,
+      company: 'Klugsys (hayy.ai)',
+      role: 'Software Developer',
+      period: 'November 2025 - Present',
+      location: 'Remote',
+      description:
+        'Building an AI-powered QA assistant that reads Software Requirements Specifications (SRS) and generates structured test cases, traceability matrices, and coverage reports automatically, reducing manual effort and improving consistency.',
+      achievements: [
+        'Developing AI agent for automated test-case generation from SRS documents',
+        'Implementing structured test cases, traceability matrices, and coverage reports',
+        'Reducing manual QA effort and improving consistency through automation',
+      ],
+      icon: Code,
+    },
+    {
+      id: 2,
       company: 'Open Healthcare Network',
       role: 'Full Stack Developer',
       period: 'July 2025 - November 2025',
@@ -24,7 +39,7 @@ export default function ExperiencePage() {
       icon: Code,
     },
     {
-      id: 2,
+      id: 3,
       company: 'Anthroholic',
       role: 'Full Stack Developer',
       period: 'October 2025 - November 2025',
@@ -37,22 +52,6 @@ export default function ExperiencePage() {
         'Ensured timely content delivery from database',
       ],
       icon: Briefcase,
-    },
-    {
-      id: 3,
-      company: 'CannerAI',
-      role: 'DevOps Engineer',
-      period: '2025',
-      location: 'Remote',
-      description:
-        'Developed and implemented a comprehensive CI/CD pipeline with automated linting workflows for improved code quality and development efficiency.',
-      achievements: [
-        'Built GitHub Actions CI/CD pipeline for automated workflows',
-        'Configured linting for frontend (ESLint), backend (flake8), and config files',
-        'Set up automated linting on every push and pull request',
-        'Implemented linting for TypeScript, Python, Markdown, YAML, and Dockerfiles',
-      ],
-      icon: GitBranch,
     },
   ];
 
@@ -211,20 +210,6 @@ export default function ExperiencePage() {
               })}
             </motion.div>
           </div>
-
-          {/* Bottom Section */}
-          <motion.div
-            className="mt-20 text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
-          >
-            <div className="inline-block rounded-full bg-white px-8 py-4 shadow-lg">
-              <p className="font-semibold text-gray-800">
-                always open to new opportunities and collaborations
-              </p>
-            </div>
-          </motion.div>
         </div>
       </div>
       <Footer />
