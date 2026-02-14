@@ -88,7 +88,9 @@ export default function ExperiencePage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">experience</h1>
+              <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+                experience
+              </h1>
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
@@ -174,7 +176,7 @@ export default function ExperiencePage() {
                         </div>
 
                         {/* Description */}
-                        <p className="mb-4 leading-relaxed text-gray-700 text-sm sm:mb-6 sm:text-base">
+                        <p className="mb-4 text-sm leading-relaxed text-gray-700 sm:mb-6 sm:text-base">
                           {experience.description}
                         </p>
 
@@ -193,7 +195,7 @@ export default function ExperiencePage() {
                                 transition={{ delay: 0.1 * idx }}
                               >
                                 <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0045FF]" />
-                                <span className="min-w-0 break-words leading-relaxed text-sm sm:text-base">
+                                <span className="min-w-0 break-words text-sm leading-relaxed sm:text-base">
                                   {achievement}
                                 </span>
                               </motion.li>

@@ -5,7 +5,13 @@ import Footer from '@/components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Trophy, TrendingUp, FileText, ExternalLink, Award } from 'lucide-react';
+import {
+  Trophy,
+  TrendingUp,
+  FileText,
+  ExternalLink,
+  Award,
+} from 'lucide-react';
 
 export default function AchievementsPage() {
   const achievements = [
@@ -23,7 +29,8 @@ export default function AchievementsPage() {
     },
     {
       id: 2,
-      title: 'Sustainability Analysis Method and System for Item Classification and Disposal Recommendations',
+      title:
+        'Sustainability Analysis Method and System for Item Classification and Disposal Recommendations',
       subtitle: 'patent published · co-inventor',
       description:
         'Our patent has been officially published in The Patent Office Journal. We developed a system that leverages Machine Learning to process image data and classify items (as reusable, recyclable, resalable or compostable). It provides users with personalized disposal recommendations and calculates real-time carbon footprint reduction for their choices. Team of inventors: Khushi Agrawal, Arpit Srivastava, Shreyansh Pathak, Naman Raj.',
@@ -95,7 +102,9 @@ export default function AchievementsPage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">achievements</h1>
+              <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+                achievements
+              </h1>
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
@@ -198,7 +207,7 @@ export default function AchievementsPage() {
                         </div>
 
                         {/* Description */}
-                        <p className="mb-4 leading-relaxed text-gray-600 text-sm sm:mb-6 sm:text-base">
+                        <p className="mb-4 text-sm leading-relaxed text-gray-600 sm:mb-6 sm:text-base">
                           {achievement.description}
                         </p>
 
