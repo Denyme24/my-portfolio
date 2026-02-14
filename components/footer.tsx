@@ -25,7 +25,7 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p>© 2025 by Naman Raj.</p>
+          <p>© 2026 by Naman Raj.</p>
         </motion.div>
 
         {/* Contact Section */}
@@ -36,7 +36,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <h3 className="mb-2 font-medium">Call</h3>
+            <h3 className="mb-2 font-medium">call</h3>
             <motion.p
               className="text-sm text-gray-600"
               whileHover={{ color: '#0045FF', x: 2 }}
@@ -52,7 +52,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h3 className="mb-2 font-medium">Write</h3>
+            <h3 className="mb-2 font-medium">write</h3>
             <Link
               href="mailto:rajnaman488@gmail.com"
               className="text-sm text-gray-600 transition-colors hover:text-[#0045FF]"
@@ -71,7 +71,7 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h3 className="mb-2 font-medium">Follow</h3>
+          <h3 className="mb-2 font-medium">follow</h3>
           <div className="flex gap-4">
             {socialLinks.map((social) => (
               <motion.div

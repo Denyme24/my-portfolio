@@ -26,7 +26,7 @@ export default function Hero() {
             className="xs:text-5xl relative text-4xl font-bold sm:text-7xl"
           >
             <span className="whitespace-nowrap">
-              Namaste
+              namaste
               <motion.span
                 initial={{ rotate: 0 }}
                 animate={{ rotate: [0, 20, 0, 20, 0] }}
@@ -49,7 +49,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-3xl"
           >
-            Here&apos;s who I am & what I do
+            here&apos;s who i am & what i do
           </motion.h2>
 
           <motion.div
@@ -60,7 +60,7 @@ export default function Hero() {
           >
             <Link href={'/naman_resume.pdf'}>
               <Button className="bg-[#0045FF] px-8 text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-[#0045FF]/90 hover:shadow-lg hover:shadow-blue-200">
-                RESUME
+                resume
               </Button>
             </Link>
             <Link href={'/projects'}>
@@ -68,7 +68,7 @@ export default function Hero() {
                 variant="outline"
                 className="group relative overflow-hidden border-0 bg-black px-8 text-white shadow-md hover:shadow-lg"
               >
-                <span className="relative z-10">PROJECTS</span>
+                <span className="relative z-10">projects</span>
                 <span className="absolute inset-0 origin-left scale-x-0 transform bg-[#0045FF] transition-transform duration-300 group-hover:scale-x-100"></span>
               </Button>
             </Link>
@@ -80,17 +80,15 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.9 }}
             className="max-w-lg text-gray-600"
           >
-            I&apos;m a dedicated developer with a knack for crafting intuitive,
-            scalable, and visually appealing web solutions. Full-stack
-            development is my playground, where I merge technical precision with
-            creative problem-solving. My expertise spans JavaScript, Go, and
-            Next.js, and I&apos;m committed to writing efficient, maintainable
-            code that drives results. Continuously learning and exploring, I aim
-            to stay at the forefront of innovation, building solutions that
-            leave a meaningful impact. Whether it&apos;s architecting a dynamic
-            web app, refining user experiences, or diving into the latest tech
-            trends, I thrive on turning ideas into reality with purpose and
-            passion.
+            I&apos;m a software engineer who is keen on building reliable
+            systems and tools from applications to automated workflows that
+            works. I started out writing full-stack web apps, and over time I
+            found myself enjoying the work that makes software stable and easier
+            to maintain. Lately I&apos;ve been working more with DevOps
+            practices and creating AI agents that take care of repetitive work
+            so teams can focus on what matters. I like solving problems that are
+            practical and make a real difference, and I&apos;m always picking up
+            new skills to keep improving the way I build and deliver software.
           </motion.p>
         </div>
       </div>

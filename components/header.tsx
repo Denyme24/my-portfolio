@@ -12,12 +12,12 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'ABOUT ME', href: '/' },
-    { name: 'RESUME', href: '/naman_resume.pdf' },
-    { name: 'PROJECTS', href: '/projects' },
-    { name: 'EXPERIENCE', href: '/experience' },
-    { name: 'ACHIEVEMENTS', href: '/achievements' },
-    { name: 'CONTACT', href: '/contact' },
+    { name: 'about_me', href: '/' },
+    { name: 'resume', href: '/naman_resume.pdf' },
+    { name: 'projects', href: '/projects' },
+    { name: 'experience', href: '/experience' },
+    { name: 'achievements', href: '/achievements' },
+    { name: 'contact', href: '/contact' },
   ];
 
   const pathname = usePathname();
@@ -46,7 +46,7 @@ export default function Navbar() {
           >
             <span className="whitespace-nowrap font-medium">Naman Raj</span>
             <span className="hidden font-light text-gray-600 sm:inline">
-              / Full Stack
+              / Software & Systems
             </span>
           </Link>
         </motion.div>

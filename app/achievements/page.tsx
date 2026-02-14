@@ -85,7 +85,7 @@ export default function AchievementsPage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              <h1 className="text-5xl font-bold">Achievements</h1>
+              <h1 className="text-5xl font-bold">achievements</h1>
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
@@ -259,7 +259,7 @@ export default function AchievementsPage() {
               >
                 <Award className="h-6 w-6 text-[#0045FF]" />
                 <span className="font-semibold text-gray-800">
-                  More achievements on the way...
+                  more achievements on the way...
                 </span>
               </motion.div>
             </div>

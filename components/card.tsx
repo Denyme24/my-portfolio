@@ -62,7 +62,7 @@ export default function ProfileCard() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          Full Stack Developer
+          Software Engineer
         </motion.p>
       </div>
     </motion.div>

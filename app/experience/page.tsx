@@ -89,7 +89,7 @@ export default function ExperiencePage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              <h1 className="text-5xl font-bold">Experience</h1>
+              <h1 className="text-5xl font-bold">experience</h1>
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
@@ -181,8 +181,8 @@ export default function ExperiencePage() {
 
                         {/* Achievements */}
                         <div className="space-y-2">
-                          <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-gray-500">
-                            Key Contributions
+                          <h3 className="mb-3 text-sm font-semibold tracking-wide text-gray-500">
+                            key contributions
                           </h3>
                           <ul className="space-y-2">
                             {experience.achievements.map((achievement, idx) => (
@@ -221,7 +221,7 @@ export default function ExperiencePage() {
           >
             <div className="inline-block rounded-full bg-white px-8 py-4 shadow-lg">
               <p className="font-semibold text-gray-800">
-                Always open to new opportunities and collaborations
+                always open to new opportunities and collaborations
               </p>
             </div>
           </motion.div>

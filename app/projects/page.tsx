@@ -88,7 +88,7 @@ export default function ProjectsPage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              Projects
+              projects
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}

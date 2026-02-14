@@ -69,7 +69,7 @@ export default function Contact() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              Let&apos;s talk
+              let&apos;s talk
             </h1>
           </motion.div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
                     htmlFor="firstName"
                     className="block text-sm font-semibold"
                   >
-                    First Name <span className="text-[#0045FF]">*</span>
+                    first name <span className="text-[#0045FF]">*</span>
                   </label>
                   <input
                     type="text"
@@ -113,7 +113,7 @@ export default function Contact() {
                     htmlFor="lastName"
                     className="block text-sm font-semibold"
                   >
-                    Last Name <span className="text-[#0045FF]">*</span>
+                    last name <span className="text-[#0045FF]">*</span>
                   </label>
                   <input
                     type="text"
@@ -133,7 +133,7 @@ export default function Contact() {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <label htmlFor="email" className="block text-sm font-semibold">
-                  Email <span className="text-[#0045FF]">*</span>
+                  email <span className="text-[#0045FF]">*</span>
                 </label>
                 <input
                   type="email"
@@ -164,7 +164,7 @@ export default function Contact() {
                   htmlFor="subject"
                   className="block text-sm font-semibold"
                 >
-                  Subject
+                  subject
                 </label>
                 <input
                   type="text"
@@ -185,7 +185,7 @@ export default function Contact() {
                   htmlFor="message"
                   className="block text-sm font-semibold"
                 >
-                  Message
+                  message
                 </label>
                 <textarea
                   id="message"
@@ -208,7 +208,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <span>{isSubmitting ? 'Sending...' : 'Send'}</span>
+                  <span>{isSubmitting ? 'sending...' : 'send'}</span>
                   <Send className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                   <span className="absolute bottom-0 left-0 h-full w-0 bg-white bg-opacity-20 transition-all duration-300 group-hover:w-full"></span>
                 </motion.button>
