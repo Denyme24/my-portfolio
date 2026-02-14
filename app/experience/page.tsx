@@ -88,13 +88,13 @@ export default function ExperiencePage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              <h1 className="text-5xl font-bold">experience</h1>
+              <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">experience</h1>
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600"
+              className="mx-auto max-w-2xl text-sm leading-relaxed text-gray-600 sm:text-base md:text-lg"
             >
               A journey through my professional experiences, where each role has
               shaped my growth as a developer and contributed to building
@@ -141,19 +141,19 @@ export default function ExperiencePage() {
                       whileHover={{ y: -5 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="rounded-lg bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-2xl md:p-7">
+                      <div className="rounded-lg bg-white p-4 shadow-lg transition-all duration-300 hover:shadow-2xl sm:p-6 md:p-7">
                         {/* Company Header */}
-                        <div className="mb-6 flex items-start justify-between">
-                          <div className="flex-1">
-                            <div className="mb-2 flex items-center gap-3">
-                              <div className="rounded-lg bg-[#0045FF]/10 p-2">
-                                <Icon className="h-6 w-6 text-[#0045FF]" />
+                        <div className="mb-4 flex items-start justify-between sm:mb-6">
+                          <div className="min-w-0 flex-1">
+                            <div className="mb-2 flex items-center gap-2 sm:gap-3">
+                              <div className="shrink-0 rounded-lg bg-[#0045FF]/10 p-1.5 sm:p-2">
+                                <Icon className="h-5 w-5 text-[#0045FF] sm:h-6 sm:w-6" />
                               </div>
-                              <div>
-                                <h2 className="text-2xl font-bold">
+                              <div className="min-w-0">
+                                <h2 className="break-words text-xl font-bold sm:text-2xl">
                                   {experience.company}
                                 </h2>
-                                <p className="text-lg font-semibold text-[#0045FF]">
+                                <p className="text-base font-semibold text-[#0045FF] sm:text-lg">
                                   {experience.role}
                                 </p>
                               </div>
@@ -162,7 +162,7 @@ export default function ExperiencePage() {
                         </div>
 
                         {/* Period and Location */}
-                        <div className="mb-4 flex flex-wrap items-center gap-4 text-sm text-gray-600">
+                        <div className="mb-3 flex flex-wrap items-center gap-3 text-xs text-gray-600 sm:mb-4 sm:gap-4 sm:text-sm">
                           <div className="flex items-center gap-2">
                             <Calendar className="h-4 w-4" />
                             <span>{experience.period}</span>
@@ -174,26 +174,26 @@ export default function ExperiencePage() {
                         </div>
 
                         {/* Description */}
-                        <p className="mb-6 leading-relaxed text-gray-700">
+                        <p className="mb-4 leading-relaxed text-gray-700 text-sm sm:mb-6 sm:text-base">
                           {experience.description}
                         </p>
 
                         {/* Achievements */}
                         <div className="space-y-2">
-                          <h3 className="mb-3 text-sm font-semibold tracking-wide text-gray-500">
+                          <h3 className="mb-2 text-xs font-semibold tracking-wide text-gray-500 sm:mb-3 sm:text-sm">
                             key contributions
                           </h3>
                           <ul className="space-y-2">
                             {experience.achievements.map((achievement, idx) => (
                               <motion.li
                                 key={idx}
-                                className="flex items-start gap-3 text-gray-600"
+                                className="flex items-start gap-2 text-gray-600 sm:gap-3"
                                 initial={{ opacity: 0, x: -10 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.1 * idx }}
                               >
-                                <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-[#0045FF]" />
-                                <span className="leading-relaxed">
+                                <div className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0045FF]" />
+                                <span className="min-w-0 break-words leading-relaxed text-sm sm:text-base">
                                   {achievement}
                                 </span>
                               </motion.li>

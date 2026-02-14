@@ -5,7 +5,7 @@ import Footer from '@/components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Trophy, TrendingUp, FileText, ExternalLink } from 'lucide-react';
+import { Trophy, TrendingUp, FileText, ExternalLink, Award } from 'lucide-react';
 
 export default function AchievementsPage() {
   const achievements = [
@@ -23,6 +23,22 @@ export default function AchievementsPage() {
     },
     {
       id: 2,
+      title: 'Sustainability Analysis Method and System for Item Classification and Disposal Recommendations',
+      subtitle: 'patent published · co-inventor',
+      description:
+        'Our patent has been officially published in The Patent Office Journal. We developed a system that leverages Machine Learning to process image data and classify items (as reusable, recyclable, resalable or compostable). It provides users with personalized disposal recommendations and calculates real-time carbon footprint reduction for their choices. Team of inventors: Khushi Agrawal, Arpit Srivastava, Shreyansh Pathak, Naman Raj.',
+      image: '/patent_img.jpg',
+      icon: Award,
+      color: '#0045FF',
+      stats: {
+        journal: '46/2025',
+        published: '14/11/2025',
+        role: 'Co-inventor',
+      },
+      link: '/patent.pdf',
+    },
+    {
+      id: 3,
       title: 'Open Healthcare Network',
       subtitle: 'Ranked 1st, Interns Leaderboard',
       description:
@@ -33,7 +49,7 @@ export default function AchievementsPage() {
       stats: { interns: '40+', rank: '1st', category: 'All Categories' },
     },
     {
-      id: 3,
+      id: 4,
       title: 'Technical Writer',
       subtitle: 'Dev.to Blog Contributor',
       description:
@@ -79,13 +95,13 @@ export default function AchievementsPage() {
                 animate={{ rotate: [0, 180, 360] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
               />
-              <h1 className="text-5xl font-bold">achievements</h1>
+              <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl">achievements</h1>
             </motion.div>
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600"
+              className="mx-auto max-w-2xl text-sm leading-relaxed text-gray-600 sm:text-base md:text-lg"
             >
               These milestones so far reflects my journey as a developer, each
               one reminding me how far I’ve come, how much I’ve learned, and how
@@ -162,17 +178,17 @@ export default function AchievementsPage() {
                       </div>
 
                       {/* Content Section */}
-                      <div className="flex flex-col justify-center p-6 md:w-1/2 md:p-8">
+                      <div className="flex flex-col justify-center p-4 sm:p-6 md:w-1/2 md:p-8">
                         {/* Title Group */}
-                        <div className="mb-6">
+                        <div className="mb-4 sm:mb-6">
                           <motion.div
-                            className="mb-2 inline-block rounded-full px-4 py-1 text-sm font-semibold text-white"
+                            className="mb-2 inline-block rounded-full px-3 py-0.5 text-xs font-semibold text-white sm:px-4 sm:py-1 sm:text-sm"
                             style={{ backgroundColor: achievement.color }}
                             whileHover={{ scale: 1.05 }}
                           >
                             {achievement.subtitle}
                           </motion.div>
-                          <h2 className="mb-3 text-3xl font-bold">
+                          <h2 className="mb-3 break-words text-lg font-bold sm:text-xl md:text-2xl lg:text-3xl">
                             {achievement.title}
                           </h2>
                           <div
@@ -182,17 +198,17 @@ export default function AchievementsPage() {
                         </div>
 
                         {/* Description */}
-                        <p className="mb-6 leading-relaxed text-gray-600">
+                        <p className="mb-4 leading-relaxed text-gray-600 text-sm sm:mb-6 sm:text-base">
                           {achievement.description}
                         </p>
 
                         {/* Stats Grid */}
-                        <div className="grid grid-cols-3 gap-4">
+                        <div className="grid min-w-0 grid-cols-3 gap-2 sm:gap-4">
                           {Object.entries(achievement.stats).map(
                             ([key, value]) => (
                               <motion.div
                                 key={key}
-                                className="rounded-lg bg-gradient-to-br from-gray-50 to-gray-100 p-4 text-center"
+                                className="min-w-0 rounded-lg bg-gradient-to-br from-gray-50 to-gray-100 p-2 text-center sm:p-3 md:p-4"
                                 whileHover={{
                                   scale: 1.05,
                                   backgroundColor: '#f9fafb',
@@ -200,12 +216,12 @@ export default function AchievementsPage() {
                                 transition={{ duration: 0.2 }}
                               >
                                 <div
-                                  className="mb-1 text-xl font-bold"
+                                  className="mb-0.5 break-words text-xs font-bold sm:mb-1 sm:text-sm md:text-base lg:text-xl"
                                   style={{ color: achievement.color }}
                                 >
                                   {value}
                                 </div>
-                                <div className="text-xs capitalize text-gray-500">
+                                <div className="text-[10px] capitalize text-gray-500 sm:text-xs">
                                   {key}
                                 </div>
                               </motion.div>
@@ -221,12 +237,12 @@ export default function AchievementsPage() {
                             rel="noopener noreferrer"
                           >
                             <motion.div
-                              className="mt-6 flex items-center gap-2 text-sm font-medium opacity-0 transition-opacity group-hover:opacity-100"
+                              className="mt-4 flex items-center gap-2 text-xs font-medium opacity-0 transition-opacity group-hover:opacity-100 sm:mt-6 sm:text-sm"
                               style={{ color: achievement.color }}
                               initial={{ x: -10 }}
                               whileHover={{ x: 0 }}
                             >
-                              <span>View Details</span>
+                              <span>view details</span>
                               <ExternalLink className="h-4 w-4" />
                             </motion.div>
                           </Link>
