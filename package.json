@@ -32,8 +32,8 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@types/formidable": "^3.4.6",
+    "@eslint/eslintrc": "^3.3.6",
+    "@types/formidable": "^3.5.1",
     "@types/node": "^24",
     "@types/nodemailer": "^8.0.0",
     "@types/react": "^18.0.0",
@@ -41,8 +41,8 @@
     "eslint": "^9.39.1",
     "eslint-config-next": "^15.1.4",
     "postcss": "^8",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.7.1",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
